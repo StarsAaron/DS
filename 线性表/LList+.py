@@ -1,6 +1,7 @@
 from 线性表.LNode import LNode
 
 
+# 单链表,翻转和排序功能
 class LList:
     def __init__(self):
         self.head = None

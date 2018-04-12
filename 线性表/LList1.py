@@ -2,11 +2,11 @@ from 线性表.LNode import LNode
 from 线性表.LList import LList
 
 
-# 单链表
+# 基于单链表扩展，增加尾节点引用域
 class LList1(LList):
     def __init__(self):
         LList.__init__(self)
-        self.rear = None
+        self.rear = None  # 尾节点引用域
 
     def prepend(self, elem):
         self.head = LNode(elem, self.head)
